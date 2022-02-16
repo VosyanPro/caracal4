@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  last_hugged_at: 2022-02-16 23:14:21
+  email: MyString
+  fluffy: false
+  colour: MyString
+  owner: one
+
+two:
+  name: MyString
+  last_hugged_at: 2022-02-16 23:14:21
+  email: MyString
+  fluffy: false
+  colour: MyString
+  owner: two
