@@ -1,0 +1,15 @@
+<% provide(:title, "Документы") %>
+
+
+
+
+
+<div class="center jumbotron">
+<h3>Список документов</h3>
+<p>
+<% @orders.each do |order| %>
+    <p><%= link_to "Документ #{order.id}", "/orders/#{order.id}", class: "btn btn-lg btn-primary"  %></p>
+<% end %>
+</p>
+
+</div>

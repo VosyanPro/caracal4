@@ -1,0 +1,7 @@
+docx.font 'Droid Serif'
+
+docx.style 'special' do
+  font   'Droid Serif'
+  italic true
+  size   16
+end

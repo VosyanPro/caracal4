@@ -1,0 +1,15 @@
+<% provide(:title, "Документ") %>
+
+<div class="center jumbotron">
+
+<h3>Документ</h3>
+<br>
+<p>Текст: <%= @order.body %></p>
+
+<br>
+<??%= @name %>
+
+<p><%= link_to "Скачать документ", download_path(@order.id) %></p>
+<p><%= link_to "К списку документов", orders_path %></p>
+
+</div>

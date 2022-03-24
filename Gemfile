@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.0.2"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.2", ">= 7.0.2.2"
+gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -35,9 +35,6 @@ gem "jbuilder"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
@@ -71,4 +68,34 @@ group :test do
   gem "webdrivers"
 end
 
-gem "simple_form", "~> 5.1"
+
+gem 'nokogiri', '1.10.10'
+gem 'rubyzip', '1.3.0'
+gem 'caracal', '1.4.1'
+gem 'caracal-rails'
+
+
+gem 'bcrypt'
+gem 'bootstrap-sass'          
+gem 'sass-rails'           
+gem 'uglifier'              
+gem 'coffee-rails'         
+gem 'jquery-rails'         
+gem 'turbolinks'                
+gem 'sdoc',          group: :doc
+
+group :development, :test do 
+  gem 'byebug'  
+  gem 'spring' 
+end
+
+group :test do
+  gem 'minitest-reporters' 
+  gem 'mini_backtrace'    
+  gem 'guard-minitest'   
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end

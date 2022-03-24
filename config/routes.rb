@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
-  resources :pets
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+    resources :reports, only: [:show], format: 'docx'
+ 
+post '/orders', to: 'orders#create'
+delete '/orders/:id', to: 'orders#destroy'
+
+get '/orders', to: 'orders#index'
+
+get '/orders/:id', to: 'orders#show'
+
 end
